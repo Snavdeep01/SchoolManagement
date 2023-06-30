@@ -1,0 +1,21 @@
+
+<h1 class="heading">School Management</h1>
+
+<% if admin_signed_in? %>
+ <div> Welcome <%= current_admin.email %> </div>
+  <%= button_to "Sign out", destroy_admin_session_path, method: :delete ,class: "admin-button"%>
+
+<% elsif teacher_signed_in? %>
+  <%= button_to "Sign out", destroy_teacher_session_path, method: :delete , class: "teacher-button" %>
+
+<% elsif student_signed_in? %>
+  <%= button_to "Sign out", destroy_student_session_path, method: :delete , class: "student-button"%>
+
+<% else %>
+<h2 class="heading">select your roles</h2>
+<%= button_to "Admin", new_admin_session_path, class: "admin-button" %>
+<br>
+<%= button_to "Teacher", new_teacher_session_path, class: "teacher-button"%>
+<br>
+<%= button_to "Student", new_student_session_path, class: "student-button"%>
+<% end %>
