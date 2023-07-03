@@ -1,0 +1,73 @@
+.admin-button {
+    background-color: #E4E4E1;
+ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;
+    border: none;
+    color: rgb(11, 11, 11);
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    margin: 4px 45%;
+    border-radius: 15px ;
+  }
+  
+  .student-button {
+    background-color: #E4E4E1;
+ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;
+    border: none;
+    color: rgb(11, 11, 11);
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 45%;
+    border-radius: 15px ;
+  }
+  
+  .teacher-button {
+    background-color: #E4E4E1;
+ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+ 	background-blend-mode: normal, multiply;
+    border: none;
+    color: rgb(11, 11, 11);
+    padding: 12px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 45%;
+    border-radius: 15px ;
+  }
+  
+  .log_in {
+   background-color: #E4E4E1;
+background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+   background-blend-mode: normal, multiply;
+   border: none;
+   color: rgb(11, 11, 11);
+   padding: 16px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   margin: 34px 40%;
+   border-radius: 15px ;
+ }
+ .sign_up {
+   background-color: #E4E4E1;
+background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+   background-blend-mode: normal, multiply;
+   border: none;
+   color: rgb(11, 11, 11);
+   padding: 16px;
+   text-align: center;
+   text-decoration: none;
+   display: inline-block;
+   font-size: 20px;
+   margin: 34px 40%;
+   border-radius: 15px ;
+ }
