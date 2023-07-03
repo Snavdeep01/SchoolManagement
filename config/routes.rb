@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  namespace :management do
+      resources :admins
+      resources :teachers
+      resources :students
+
+      root to: "admins#index"
+    end
   # devise_for :teachers
   # devise_for :students
   # devise_for :admins
