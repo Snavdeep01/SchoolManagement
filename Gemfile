@@ -15,6 +15,9 @@ gem "pg", "~> 1.4"
 #Integrate devise gem
 gem "devise"
 
+#integrate Administrate Gem
+gem 'administrate'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
