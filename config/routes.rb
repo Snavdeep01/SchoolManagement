@@ -1,9 +1,20 @@
 Rails.application.routes.draw do
+  # get 'books/index'
+  # get 'books/show'
+  # get 'books/new'
+  # get 'books/create'
+  # get 'books/edit'
+  # get 'books/update'
+  # get 'books/destroy'
+
+  
+
+
   namespace :management do
       resources :admins
       resources :teachers
       resources :students
-
+      resources :books
       root to: "admins#index"
     end
   # devise_for :teachers
