@@ -56,6 +56,7 @@ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba
    font-size: 20px;
    margin: 34px 40%;
    border-radius: 15px ;
+   box-shadow: 10px 10px 10px  5px rgb(59, 59, 59) ;
  }
  .sign_up {
    background-color: #E4E4E1;
@@ -70,4 +71,5 @@ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba
    font-size: 20px;
    margin: 34px 40%;
    border-radius: 15px ;
+   box-shadow: 10px 10px 10px  5px rgb(59, 59, 59) ;
  }
