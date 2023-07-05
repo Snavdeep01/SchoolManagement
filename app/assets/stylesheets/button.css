@@ -73,3 +73,16 @@ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba
    border-radius: 15px ;
    box-shadow: 10px 10px 10px  5px rgb(59, 59, 59) ;
  }
+ table {
+   border-collapse: collapse;
+   width: 100%;
+ }
+ th, td {
+   text-align: left;
+   padding: 8px;
+   border-bottom: 1px solid #ddd;
+ }
+ th {
+   background-color: #F2F2F2;
+ }
+ tr:hover {background-color: rgb(82, 93, 94);}

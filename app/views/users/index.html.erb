@@ -3,6 +3,9 @@
 
 <% if admin_signed_in? %>
  <div> Welcome <%= current_admin.email %> </div>
+ <%= link_to "Personal Details", principals_index_path, class: "btn btn-primary" %>
+ 
+
   <%= button_to "Sign out", destroy_admin_session_path, method: :delete ,class: "admin-button"%>
 
 <% elsif teacher_signed_in? %>
