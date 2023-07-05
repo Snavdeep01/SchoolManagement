@@ -3,15 +3,18 @@
 
 <% if admin_signed_in? %>
  <div> Welcome <%= current_admin.email %> </div>
- <%= link_to "Personal Details", principals_index_path, class: "btn btn-primary" %>
+ <%= link_to "Personal Details", principals_index_path, class: "admin-button" %>
  
-
   <%= button_to "Sign out", destroy_admin_session_path, method: :delete ,class: "admin-button"%>
 
 <% elsif teacher_signed_in? %>
+
+  <%= link_to "Teacher Details", faculties_index_path, class: "student-button" %>
   <%= button_to "Sign out", destroy_teacher_session_path, method: :delete , class: "teacher-button" %>
 
 <% elsif student_signed_in? %>
+  
+  <%= link_to "Student Details", scholars_index_path, class: "teacher-button" %>
   <%= button_to "Sign out", destroy_student_session_path, method: :delete , class: "student-button"%>
 
 <% else %>

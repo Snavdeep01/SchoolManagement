@@ -1,2 +1,18 @@
-<h1>Scholars#index</h1>
-<p>Find me in app/views/scholars/index.html.erb</p>
+<h1>Students List</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>E-Mail</th>
+            <th>Contact Number</th>
+            <th>Parent Name</th>
+        </tr>
+        
+            <tr>
+            <td><%= current_student.full_name %></td>
+            <td><%= current_student.email %></td>
+            <td><%= current_student.contact_number %></td>
+            <td><%= current_student.parent_name %></td>
+            </tr>
+        
+    </table>
+    

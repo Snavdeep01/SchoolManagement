@@ -3,14 +3,15 @@
         <tr>
             <th>Name</th>
             <th>E-Mail</th>
-            <th>Contact Numbery</th>
+            <th>Contact Number</th>
         </tr>
-        <% @admins.each do |admins| %>
+        
             <tr>
-            <td><%= admins.full_name %></td>
-            <td><%= admins.email %></td>
-            <td><%= admins.contact_number %></td>
+            <td><%= current_admin.full_name %></td>
+            <td><%= current_admin.email %></td>
+            <td><%= current_admin.contact_number %></td>
             </tr>
-        <% end %>
+        
     </table>
-    
+    <%= link_to "Edit", edit_admin_registration_path, class: "admin-button" %> 
+    <%= link_to "Delete", admin_session_path, class: "admin-button" %> 
