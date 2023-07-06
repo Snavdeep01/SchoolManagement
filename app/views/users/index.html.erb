@@ -2,8 +2,9 @@
 <h1 class="heading">School Management</h1>
 
 <% if admin_signed_in? %>
+
  <div> Welcome <%= current_admin.email %> </div>
- <%= link_to "Personal Details", principals_index_path, class: "admin-button" %>
+ <%= link_to "Management", management_admins_path, class: "admin-button" %>
  
   <%= button_to "Sign out", destroy_admin_session_path, method: :delete ,class: "admin-button"%>
 

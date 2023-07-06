@@ -1,5 +1,6 @@
 .admin-button {
-    background-color: #E4E4E1;
+  background-color: transparent;
+  /* backdrop-filter: blur(1px); */
  background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
  	background-blend-mode: normal, multiply;
     border: none;
@@ -11,10 +12,12 @@
     font-size: 18px;
     margin: 4px 45%;
     border-radius: 15px ;
+    box-shadow: 4px 6px 11px  4px rgb(59, 59, 59) ;
   }
   
   .student-button {
-    background-color: #E4E4E1;
+    background-color: transparent;
+  /* backdrop-filter: blur(1px); */
  background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
  	background-blend-mode: normal, multiply;
     border: none;
@@ -26,10 +29,12 @@
     font-size: 20px;
     margin: 4px 45%;
     border-radius: 15px ;
+    box-shadow: 4px 6px 11px  4px rgb(59, 59, 59) ;
   }
   
   .teacher-button {
-    background-color: #E4E4E1;
+    background-color: transparent;
+  /* backdrop-filter: blur(1px); */
  background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
  	background-blend-mode: normal, multiply;
     border: none;
@@ -41,10 +46,12 @@
     font-size: 20px;
     margin: 4px 45%;
     border-radius: 15px ;
+    box-shadow: 4px 6px 11px  4px rgb(59, 59, 59) ;
   }
   
   .log_in {
-   background-color: #E4E4E1;
+   background-color: transparent;
+   backdrop-filter: blur(1px);
 background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
    background-blend-mode: normal, multiply;
    border: none;
@@ -56,10 +63,11 @@ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba
    font-size: 20px;
    margin: 34px 40%;
    border-radius: 15px ;
-   box-shadow: 10px 10px 10px  5px rgb(59, 59, 59) ;
+   /* box-shadow: 10px 10px 10px  5px rgb(59, 59, 59) ; */
  }
  .sign_up {
-   background-color: #E4E4E1;
+  background-color: transparent;
+  backdrop-filter: blur(1px);
 background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
    background-blend-mode: normal, multiply;
    border: none;
@@ -69,7 +77,7 @@ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba
    text-decoration: none;
    display: inline-block;
    font-size: 20px;
-   margin: 34px 40%;
+   margin: 10px 40%;
    border-radius: 15px ;
    box-shadow: 10px 10px 10px  5px rgb(59, 59, 59) ;
  }
@@ -86,3 +94,4 @@ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba
    background-color: #F2F2F2;
  }
  tr:hover {background-color: rgb(82, 93, 94);}
+admin-button:hover {background-color: rgb(82, 93, 94);}
