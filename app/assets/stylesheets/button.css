@@ -52,7 +52,7 @@
   .log_in {
    background-color: transparent;
    backdrop-filter: blur(1px);
-background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(136, 239, 242, 0.6) 100%);
    background-blend-mode: normal, multiply;
    border: none;
    color: rgb(11, 11, 11);
@@ -61,14 +61,14 @@ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba
    text-decoration: none;
    display: inline-block;
    font-size: 20px;
-   margin: 34px 40%;
+   margin: 34px 34%;
    border-radius: 15px ;
    /* box-shadow: 10px 10px 10px  5px rgb(59, 59, 59) ; */
  }
  .sign_up {
   background-color: transparent;
   backdrop-filter: blur(1px);
-background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(143,152,157,0.60) 100%);
+  background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba(0,0,0,0.03) 100%), linear-gradient(to top, rgba(255,255,255,0.1) 0%, rgba(136, 239, 242, 0.6) 100%);
    background-blend-mode: normal, multiply;
    border: none;
    color: rgb(11, 11, 11);
@@ -93,5 +93,17 @@ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba
  th {
    background-color: #F2F2F2;
  }
- tr:hover {background-color: rgb(82, 93, 94);}
-admin-button:hover {background-color: rgb(82, 93, 94);}
+ tr:hover {background-color: rgb(0, 218, 238);}
+
+ input {
+  width: 80%;
+  color: rgb(5, 2, 0);
+  background-color: #FDFDFF;
+  border-radius: 10px;
+}
+.edit{
+  color: rgb(0, 0, 3);
+}
+.admin-button:hover {background-color: rgb(0, 218, 238);}
+.teacher-button:hover {background-color: rgb(0, 218, 238);}
+.student-button:hover {background-color: rgb(0, 218, 238);}

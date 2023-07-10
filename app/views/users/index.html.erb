@@ -11,6 +11,8 @@
 <% elsif teacher_signed_in? %>
 
   <%= link_to "Teacher Details", faculties_index_path, class: "student-button" %>
+  <%= link_to "Student  Details", scholars_index_path, class: "student-button" %>
+  
   <%= button_to "Sign out", destroy_teacher_session_path, method: :delete , class: "teacher-button" %>
 
 <% elsif student_signed_in? %>
@@ -26,3 +28,4 @@
 <br>
 <%= button_to "Student", new_student_session_path, class: "student-button"%>
 <% end %>
+l

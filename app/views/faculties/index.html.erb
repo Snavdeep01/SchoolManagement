@@ -5,14 +5,26 @@
             <th>E-Mail</th>
             <th>Contact Number</th>
             <th>Subject</th>
+            <% if admin_signed_in? %>
+                <th>Edit</th>
+            <% end %>
         </tr>
-        
+        <% @teachers.each do |teachers| %>
             <tr>
-            <td><%= current_teacher.full_name %></td>
-            <td><%= current_teacher.email %></td>
-            <td><%= current_teacher.contact_number %></td>
-            <td><%= current_teacher.subject %></td>
+            <td><%= teachers.full_name %></td>
+            <td><%= teachers.email %></td>
+            <td><%= teachers.contact_number %></td>
+            <td><%= teachers.subject %></td>
+            <% if admin_signed_in? %>
+            <th><%= link_to "Edit", edit_teacher_registration_path %></th>
+            <% end %>
             </tr>
-        
+        <% end %>
     </table>
-    
+
+
+
+
+
+
+

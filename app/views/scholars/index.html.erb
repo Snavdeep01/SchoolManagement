@@ -1,18 +1,27 @@
 <h1>Students List</h1>
+    
     <table>
         <tr>
             <th>Name</th>
             <th>E-Mail</th>
             <th>Contact Number</th>
             <th>Parent Name</th>
+            <% if admin_signed_in? or teacher_signed_in? %>
+                <th>Edit</th>
+            <% end %>
+           
         </tr>
-        
+        <% @student.each do |students| %>
             <tr>
-            <td><%= current_student.full_name %></td>
-            <td><%= current_student.email %></td>
-            <td><%= current_student.contact_number %></td>
-            <td><%= current_student.parent_name %></td>
-            </tr>
+            <td><%= students.full_name %></td>
+            <td><%= students.email %></td>
+            <td><%= students.contact_number %></td>
+            <td><%= students.parent_name %></td>
+            <% if admin_signed_in? or teacher_signed_in? %>
+                <td><%= link_to "Edit", edit_student_registration_path %></td>
+            <% end %>
         
+            </tr>
+        <% end %>
     </table>
     

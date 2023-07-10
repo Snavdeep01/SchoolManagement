@@ -1,6 +1,6 @@
 class ScholarsController < ApplicationController
   def index
-    @students=Student.all
+    @student=Student.all
   end
 
   def show
@@ -10,5 +10,7 @@ class ScholarsController < ApplicationController
   end
 
   def distroy
+    @student = Student.find(params[:id])
+    @student.destroy
   end
 end
