@@ -1,2 +1,19 @@
-<h1>Books#new</h1>
-<p>Find me in app/views/books/new.html.erb</p>
+<div class="sign_up">
+<h1>New Books</h1>
+
+<%= form_with model: @book do |form| %>
+    <div>
+      <%= form.label :book_name %><br>
+      <%= form.text_field :book_name %>
+    </div>
+  
+    <div>
+      <%= form.label :author_name %><br>
+      <%= form.text_area :author_name %>
+    </div>
+  
+    <div>
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>

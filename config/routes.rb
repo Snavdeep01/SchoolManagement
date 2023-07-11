@@ -2,15 +2,15 @@ Rails.application.routes.draw do
   get 'scholars/index'
   get 'scholars/show'
   get 'scholars/new'
-  get 'scholars/distroy'
+  # get 'scholars/distroy'
   get 'faculties/index'
   get 'faculties/show'
   get 'faculties/new'
-  get 'faculties/distroy'
+  # get 'faculties/distroy'
   get 'principals/index'
   get 'principals/show'
   get 'principals/new'
-  get 'principals/distroy'
+  # get 'principals/distroy'
   # get 'books/index'
   # get 'books/show'
   # get 'books/new'
@@ -18,9 +18,9 @@ Rails.application.routes.draw do
   # get 'books/edit'
   # get 'books/update'
   # get 'books/destroy'
- 
+  delete 'scholars/:id', to: 'scholars#destroy', as: 'scholar'
   
-
+resources :books
 
   namespace :management do
       resources :admins

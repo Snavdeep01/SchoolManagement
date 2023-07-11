@@ -18,6 +18,9 @@
 <% elsif student_signed_in? %>
   
   <%= link_to "Student Details", scholars_index_path, class: "teacher-button" %>
+  
+  <%= link_to "Book Details", books_path, class: "teacher-button" %>
+  
   <%= button_to "Sign out", destroy_student_session_path, method: :delete , class: "student-button"%>
 
 <% else %>

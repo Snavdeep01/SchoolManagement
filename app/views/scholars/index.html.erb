@@ -1,4 +1,4 @@
-<h1>Students List</h1>
+<h1 class="heading">Students List</h1>
     
     <table>
         <tr>
@@ -9,6 +9,10 @@
             <% if admin_signed_in? or teacher_signed_in? %>
                 <th>Edit</th>
             <% end %>
+
+            <% if admin_signed_in? or teacher_signed_in? %>
+            <th>Delete</th>
+        <% end %>
            
         </tr>
         <% @student.each do |students| %>
@@ -19,6 +23,12 @@
             <td><%= students.parent_name %></td>
             <% if admin_signed_in? or teacher_signed_in? %>
                 <td><%= link_to "Edit", edit_student_registration_path %></td>
+            <% end %>
+            <% if admin_signed_in? or teacher_signed_in? %>
+            <td><%= link_to "Destroy", scholar_path(students), data: {
+                turbo_method: :delete,
+                turbo_confirm: "Are you sure you want to destroy student ?"
+              } %></td>
             <% end %>
         
             </tr>

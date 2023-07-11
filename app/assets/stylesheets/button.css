@@ -107,3 +107,14 @@ background-image: radial-gradient(at top center, rgba(255,255,255,0.03) 0%, rgba
 .admin-button:hover {background-color: rgb(0, 218, 238);}
 .teacher-button:hover {background-color: rgb(0, 218, 238);}
 .student-button:hover {background-color: rgb(0, 218, 238);}
+
+
+.new{
+  color: rgb(0, 0, 0);
+    padding: 15px;
+    margin: 4px 0%;
+    border-radius: 15px;
+    box-shadow: 4px 6px 11px 4px rgb(59, 59, 59);
+    background-image: radial-gradient(at top center, rgb(5 42 36 / 3%) 0%, rgb(58 161 167 / 3%) 100%), linear-gradient(to top, rgb(219 235 233 / 10%) 0%, rgb(87 221 197 / 60%) 100%);
+    float: right;
+}
