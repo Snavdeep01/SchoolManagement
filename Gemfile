@@ -12,6 +12,12 @@ gem "sprockets-rails"
 # Use sqlite3 as the database for Active Record
 gem "pg", "~> 1.4"
 
+#Integrate devise gem
+gem "devise"
+
+#integrate Administrate Gem
+gem 'administrate'
+
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", "~> 5.0"
 
@@ -70,3 +76,5 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+gem 'pry'

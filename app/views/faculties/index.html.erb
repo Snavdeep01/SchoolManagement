@@ -1,0 +1,30 @@
+<h1 class="heading">Teachers List</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>E-Mail</th>
+            <th>Contact Number</th>
+            <th>Subject</th>
+            <% if admin_signed_in? %>
+                <th>Edit</th>
+            <% end %>
+        </tr>
+        <% @teachers.each do |teachers| %>
+            <tr>
+            <td><%= teachers.full_name %></td>
+            <td><%= teachers.email %></td>
+            <td><%= teachers.contact_number %></td>
+            <td><%= teachers.subject %></td>
+            <% if admin_signed_in? %>
+            <th><%= link_to "Edit", edit_teacher_registration_path %></th>
+            <% end %>
+            </tr>
+        <% end %>
+    </table>
+
+
+
+
+
+
+
